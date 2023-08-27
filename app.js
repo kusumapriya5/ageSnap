@@ -9,9 +9,8 @@ const resultDays = document.getElementById('result-days')
 const submitButton = document.getElementById('submitButton')
 
 submitButton.addEventListener('click', function () {
-
     const today = new Date()
-    if (yearInput.value > today.getFullYear || yearInput.value === "") {
+    if (yearInput.value > today.getFullYear() || yearInput.value === "") {
         alert("Enter a valid year")
         return
     }
